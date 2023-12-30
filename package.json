@@ -17,7 +17,9 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.2",
+    "browser-sync": "^3.0.2",
     "gulp-pug": "^5.0.0",
-    "gulp-svg-sprite": "^2.0.3"
+    "gulp-svg-sprite": "^2.0.3",
+    "watch": "^1.0.2"
   }
 }
