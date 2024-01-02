@@ -12032,6 +12032,30 @@ body {
   margin: 0;
 }
 
+.profile {
+  height: calc(100vh - 120px);
+}
+.profile {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.profile::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  border: none;
+  padding: 40px 16px;
+}
+
+.card-img-top {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+}
+
 @media (max-width: 576px) {
   .leftside {
     display: flex;
@@ -12057,5 +12081,14 @@ body {
   }
   .rightside {
     display: none;
+  }
+  .profile {
+    height: calc(100vh - 72px);
+  }
+  .contact {
+    width: 366px;
+  }
+  .contact__info {
+    width: 236px;
   }
 }
