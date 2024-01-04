@@ -11934,6 +11934,10 @@ h2, .h2 {
   height: 100%;
 }
 
+.chats__contacts {
+  height: calc(100vh - 352px);
+}
+
 .leftside {
   border-right: 1px solid #EFEFEF;
   padding: 0;
@@ -12045,7 +12049,7 @@ h2, .h2 {
 }
 
 .rightside-chat__chat {
-  height: calc(100vh - 94px - 90px - 48px);
+  height: calc(100vh - 95px - 90px - 48px);
   padding-top: 47px;
   padding-bottom: 64px;
 }
