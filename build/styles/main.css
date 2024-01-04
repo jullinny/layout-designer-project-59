@@ -12104,6 +12104,14 @@ body {
   border-bottom: 1px solid rgba(239, 239, 239, 0.6);
 }
 
+.hide {
+  display: none;
+}
+
+.rightside-hidden {
+  display: none;
+}
+
 .profile {
   height: calc(100vh - 120px);
 }
@@ -12182,10 +12190,16 @@ body {
     width: 42px;
     height: 42px;
   }
+  .hide {
+    display: block;
+  }
   .message {
     margin: 0 0 16px;
   }
   .message img {
+    display: none;
+  }
+  .leftside > .leftside__body ~ .rightside-chat {
     display: none;
   }
 }
