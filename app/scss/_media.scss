@@ -4,13 +4,13 @@
   }
 
   h2 {
-    font-size:24.926px
+    font-size: 24.926px;
   }
 
   .leftside {
-	display: flex;
-	flex-direction: column-reverse;
-  gap: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0;
 
     &__header {
       border-radius: 0;
@@ -33,10 +33,6 @@
     border-radius: 0;
   }
 
-  .contact {
-	height: calc(100vh - 249px);
-  }
-
   .rightside {
     display: none;
   }
@@ -50,8 +46,9 @@
     margin-left: 40px;
   }
 
-  .contact{
+  .contact {
 	  width: 366px;
+    height: calc(100vh - 249px);
 
 		&__info {
 		  width: 236px;
@@ -73,7 +70,7 @@
     flex-direction: column-reverse;
   }
 
-  .rightside-chat{
+  .rightside-chat {
     &__chat {
       padding: 48px;
       height: calc(100vh - 94px - 72px - 72px);
@@ -96,10 +93,9 @@
 
   .message {
     margin: 0 0 16px;
+
     img {
       display: none;
     }
-
   }
 }
-  

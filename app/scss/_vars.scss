@@ -1,17 +1,17 @@
 @use "sass:map";
 
-  $primary: #4545A5;
-  $secondary: #6C757D;
-  $success: #28A745;
-  $danger: #DC3545;
-  $warning: #FFC107;
-  $info: #17A2B8;
-  $light: #FBFBFB;
-  $gray: #EFEFEF;
-  $dark: #343A40;
-  $title: #212529;
+$primary: #4545a5;
+$secondary: #6c757d;
+$success: #28a745;
+$danger: #dc3545;
+$warning: #ffc107;
+$info: #17a2b8;
+$light: #fbfbfb;
+$gray: #efefef;
+$dark: #343a40;
+$title: #212529;
 
-  $grid-breakpoints: (
+$grid-breakpoints: (
   xs: 0,
   sm: 576px,
   md: 768px,
@@ -19,7 +19,6 @@
   xl: 1200px,
   xxl: 1600px,
 );
-
 $container-max-widths: (
   sm: 540px,
   md: 720px,
@@ -27,10 +26,7 @@ $container-max-widths: (
   xl: 1140px,
   xxl: 1540px,
 );
-
 $border-radius: 1rem;
 $border-color: $gray;
-
 $enable-shadows: true;
-
-$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", arial, sans-serif !default;

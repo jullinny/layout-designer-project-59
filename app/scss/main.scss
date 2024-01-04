@@ -1,13 +1,13 @@
-@import "reset.scss";
-@import "vars.scss";
-@import "mixins.scss";
+@import "reset";
+@import "vars";
+@import "mixins";
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 body {
   max-height: 100vh;
   color: $secondary;
   font-family: $font-family-sans-serif;
-  background-color: #EFEFEF;
+  background-color: $gray;
 }
 
 h2 {
@@ -17,7 +17,9 @@ h2 {
 .padding {
   padding: 24px;
 }
+
 // navigation start 
+
 .nav {
   flex-wrap: nowrap;
 }
@@ -28,13 +30,14 @@ h2 {
 }
 
 // navigation end
+
 .chat {
   background-color: #fff;
   border-radius: $border-radius;
   height: 100%;
 }
 
-.chats__contacts {
+.chats-contacts {
   height: calc(100vh - 352px);
 }
 
@@ -43,7 +46,7 @@ h2 {
   padding: 0;
   gap: 28px;
   
-  &__header {
+  &-header {
     padding: 16px 0 16px 16px;
     border-top-left-radius: $border-radius;
     
@@ -64,12 +67,12 @@ h2 {
     } 
   }
  
-  &__menu {
+  &-menu {
     margin-bottom: 0;
     border: none;
   }
 
-  &__body {
+  &-body {
     h2 {
       color: #212529;
       font-weight: bold;
@@ -89,7 +92,7 @@ h2 {
 .contact {
   @include hide-scrollbar;
   height: calc(100vh - 303px);
-  &__item{
+  &-item{
     padding: 22px 16px 21px;
     gap: 24px;
     
@@ -106,7 +109,7 @@ h2 {
     }
   }
 
-  &__info {
+  &-info {
     width: 286px;
     
     p {
@@ -122,11 +125,11 @@ h2 {
     }
   }
 
-  &__name {
+  &-name {
     color: #212529;
   }
 
-  &__time {
+  &-time {
     color: #ADB5BD;
   }
 }
@@ -143,7 +146,7 @@ h2 {
   padding-left: 0;
   position: relative;
 
-  &__hello-content {
+  &-hello-content {
     text-align: center;
     position: absolute;
     top: 50%;
@@ -152,38 +155,37 @@ h2 {
     transform: translateY(-50%);
   }
 
-  &__hello-img {
+  &-hello-img {
     width: 200px;
     height: 200px;
     margin-bottom: 18px;
   }
 
-  &__title {
+  &-title {
     margin: 0;
   }
 }
 
 .rightside-chat {
-  &__chat {
+  &-chat {
     @include hide-scrollbar;
     height: calc(100vh - 95px - 90px - 48px);
     padding-top: 47px;
     padding-bottom: 64px;
   }
 
-  &__form {
+  &-form {
     padding: 20px 0 20px 24px;
     margin: 0 48px;
     border-top: 1px solid $border-color;
   }
 
-  &__input {
+  &-input {
     border: none;
-    
     width: 100%;
   }
 
-  &__button {
+  &-button {
     border: none;
     width: 50px;
     height: 50px;
@@ -191,14 +193,14 @@ h2 {
     border-radius: 50%;
   }
 
-  &__button-img {
+  &-button-img {
     width: 24px;
     height: 24px;
   }
 }
 
 .no-shadow {
-  box-shadow: none
+  box-shadow: none;
 }
 
 .height {
@@ -209,18 +211,18 @@ h2 {
   gap: 16px;
   max-width: 624px;
   
-  &__time-left{
+  &-time-left {
     opacity: 0.6;
   }
 
-  &__time-right {
+  &-time-right {
     color: #fff;
     opacity: 0.6;
   }
 }
 
-.message__text {
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.08);
+.message-text {
+  box-shadow: 0px 2px 2px 0px rgba(0 0 0 / 8%);
 }
 
 .m-left {
@@ -250,6 +252,7 @@ h2 {
 // rightside end
 
 // profile
+
 .profile {
   @include hide-scrollbar;
   height: calc(100vh - 120px);
@@ -268,4 +271,104 @@ h2 {
 
 // profile end
 
-@import 'media';
+@media (max-width: 576px) {
+  .padding {
+    padding: 0;
+  }
+
+  h2 {
+    font-size: 24.926px;
+  }
+
+  .leftside {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0;
+
+    &__header {
+      border-radius: 0;
+      height: 72px;
+      margin-bottom: 0;
+      padding: 24px 0 23px 21px;
+    }
+
+    &__hide {
+      display: none;
+    }
+
+    &__img {
+      margin-right: 40px;
+    }
+  }
+
+  .chat {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .rightside {
+    display: none;
+  }
+
+  .profile {
+    height: calc(100vh - 72px);
+  }
+
+  .list-group {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  .contact {
+	  width: 366px;
+    height: calc(100vh - 249px);
+
+		&__info {
+		  width: 236px;
+	  }
+  }
+
+  .chats__contacts {
+    height: calc(100vh - 295px);
+  }
+
+  // media chat page
+
+  .hidden {
+    display: none;
+  }
+
+  .reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .rightside-chat {
+    &__chat {
+      padding: 48px;
+      height: calc(100vh - 94px - 72px - 72px);
+    }
+
+    &__form {
+      padding: 15px 15px 15px 32px;
+      margin: 0;
+    }
+
+    &__button {
+      width: 42px;
+      height: 42px;
+    }
+  }
+
+  .hide {
+    display: block;
+  }
+
+  .message {
+    margin: 0 0 16px;
+
+    img {
+      display: none;
+    }
+  }
+}
