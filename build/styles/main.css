@@ -12059,7 +12059,7 @@ h2, .h2 {
   display: none;
 }
 .rightside-chat__form {
-  padding: 20px 24px;
+  padding: 20px 0 20px 24px;
   margin: 0 48px;
   border-top: 1px solid #EFEFEF;
 }
@@ -12194,6 +12194,9 @@ h2, .h2 {
   .contact__info {
     width: 236px;
   }
+  .chats__contacts {
+    height: calc(100vh - 295px);
+  }
   .hidden {
     display: none;
   }
@@ -12223,7 +12226,7 @@ h2, .h2 {
     display: none;
   }
   .message__time {
-    font-size: 12.8px;
+    font-size: 14px;
     line-height: 19.2px;
   }
 }
