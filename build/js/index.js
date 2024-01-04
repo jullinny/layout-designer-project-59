@@ -5,11 +5,13 @@ const chat = document.getElementById('chat-btn');
 const profile = document.getElementById('profile-btn');
 
 
-const media = window.matchMedia("(max-width: 576px)")
 
-if (media.matches) {
-    
+if (window.matchMedia("(max-width: 576px)").matches) {
+    console.log('viewport done')
+    rightside.classList.add('rightside-hidden')
+
     profile.onclick = () => {
+        console.log('click done')
         rightside.classList.add('rightside-hidden')
     }
     contacts.onclick = () => {

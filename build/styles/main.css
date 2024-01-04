@@ -11937,6 +11937,7 @@ h2, .h2 {
 .leftside {
   border-right: 1px solid #EFEFEF;
   padding: 0;
+  gap: 28px;
 }
 .leftside__header {
   padding: 16px 0 16px 16px;
@@ -12007,7 +12008,6 @@ h2, .h2 {
 }
 .contact__info a {
   text-decoration: none;
-  color: #212529;
   font-weight: bold;
 }
 
@@ -12040,7 +12040,9 @@ h2, .h2 {
 }
 
 .rightside-chat__chat {
-  height: calc(100vh - 95px - 90px - 48px);
+  height: calc(100vh - 94px - 90px - 48px);
+  padding-top: 47px;
+  padding-bottom: 64px;
 }
 .rightside-chat__chat {
   -ms-overflow-style: none;
@@ -12054,6 +12056,7 @@ h2, .h2 {
 .rightside-chat__form {
   padding: 20px 24px;
   margin: 0 48px;
+  border-top: 1px solid #EFEFEF;
 }
 .rightside-chat__input {
   border: none;
@@ -12153,6 +12156,7 @@ h2, .h2 {
   .leftside {
     display: flex;
     flex-direction: column-reverse;
+    gap: 0;
   }
   .leftside__header {
     border-radius: 0;
@@ -12212,7 +12216,8 @@ h2, .h2 {
   .message img {
     display: none;
   }
-  .leftside > .leftside__body ~ .rightside-chat {
-    display: none;
+  .message__time {
+    font-size: 12.8px;
+    line-height: 19.2px;
   }
 }
