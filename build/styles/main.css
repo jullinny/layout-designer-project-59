@@ -11911,6 +11911,14 @@ body {
   background-color: #EFEFEF;
 }
 
+h2, .h2 {
+  font-size: 32px;
+}
+
+.padding {
+  padding: 24px;
+}
+
 .nav {
   flex-wrap: nowrap;
 }
@@ -11924,7 +11932,6 @@ body {
   background-color: #fff;
   border-radius: 1rem;
   height: 100%;
-  margin: 24px;
 }
 
 .leftside {
@@ -12137,6 +12144,9 @@ body {
 }
 
 @media (max-width: 576px) {
+  .padding {
+    padding: 0;
+  }
   .leftside {
     display: flex;
     flex-direction: column-reverse;
