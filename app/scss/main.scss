@@ -99,7 +99,7 @@ h2 {
     gap: 24px;
 
     $enable-shadows: true;
-    box-shadow: 0px 2px 2px 0px rgba(0 0 0 / 8%);
+    box-shadow: 0 2px 2px 0 rgba(0 0 0 / 8%);
 
     &:hover {
       background-color: $primary;
@@ -216,7 +216,7 @@ h2 {
   &-time-left {
     opacity: 0.6;
   }
-  
+
   &-time-right {
     color: #fff;
     opacity: 0.6;
@@ -224,11 +224,11 @@ h2 {
 }
 
 .message-text {
-  box-shadow: 0px 2px 2px 0px rgba(0 0 0 / 8%);
+  box-shadow: 0 2px 2px 0 rgba(0 0 0 / 8%);
 }
 
 .m-left {
-  margin: 0px auto 16px 48px;
+  margin: 0 auto 16px 48px;
 }
 
 .m-right {
