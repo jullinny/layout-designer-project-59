@@ -12148,6 +12148,9 @@ h2, .h2 {
   border: none;
   padding: 40px 16px;
 }
+.card__text {
+  color: rgba(0, 0, 0, 0.5);
+}
 
 .card-img-top {
   width: 90px;
@@ -12191,6 +12194,10 @@ h2, .h2 {
   }
   .profile {
     height: calc(100vh - 72px);
+  }
+  .list-group {
+    margin-right: 40px;
+    margin-left: 40px;
   }
   .contact {
     width: 366px;
