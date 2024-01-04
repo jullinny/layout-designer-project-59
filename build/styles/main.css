@@ -12147,6 +12147,9 @@ h2, .h2 {
   .padding {
     padding: 0;
   }
+  h2, .h2 {
+    font-size: 24.926px;
+  }
   .leftside {
     display: flex;
     flex-direction: column-reverse;
