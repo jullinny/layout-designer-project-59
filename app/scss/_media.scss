@@ -1,0 +1,105 @@
+@media (max-width: 576px) {
+  .padding {
+    padding: 0;
+  }
+
+  h2 {
+    font-size:24.926px
+  }
+
+  .leftside {
+	display: flex;
+	flex-direction: column-reverse;
+  gap: 0;
+
+    &__header {
+      border-radius: 0;
+      height: 72px;
+      margin-bottom: 0;
+      padding: 24px 0 23px 21px;
+    }
+
+    &__hide {
+      display: none;
+    }
+
+    &__img {
+      margin-right: 40px;
+    }
+  }
+
+  .chat {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .contact {
+	height: calc(100vh - 249px);
+  }
+
+  .rightside {
+    display: none;
+  }
+
+  .profile {
+    height: calc(100vh - 72px);
+  }
+
+  .list-group {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  .contact{
+	  width: 366px;
+
+		&__info {
+		  width: 236px;
+	  }
+  }
+
+  .chats__contacts {
+    height: calc(100vh - 295px);
+  }
+
+  // media chat page
+
+  .hidden {
+    display: none;
+  }
+
+  .reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .rightside-chat{
+    &__chat {
+      padding: 48px;
+      height: calc(100vh - 94px - 72px - 72px);
+    }
+
+    &__form {
+      padding: 15px 15px 15px 32px;
+      margin: 0;
+    }
+
+    &__button {
+      width: 42px;
+      height: 42px;
+    }
+  }
+
+  .hide {
+    display: block;
+  }
+
+  .message {
+    margin: 0 0 16px;
+    img {
+      display: none;
+    }
+
+  }
+}
+  

@@ -1,4 +1,8 @@
 /node_modules/
 package-lock.json
 app/**
+<<<<<<< HEAD
 !app/scss/**
+=======
+!app/scss
+>>>>>>> 35febf875be7e2e6dad6be20607055c70e48e7aa
