@@ -86,7 +86,7 @@ a {
   --bs-dark-border-subtle: #adb5bd;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
@@ -11907,7 +11907,7 @@ textarea.form-control-lg {
 body {
   max-height: 100vh;
   color: #6C757D;
-  font-family: "Roboto", sans-serif;
+  font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   background-color: #EFEFEF;
 }
 
@@ -11940,7 +11940,7 @@ h2, .h2 {
   gap: 28px;
 }
 .leftside__header {
-  padding: 24px 0 23px 21px;
+  padding: 16px 0 16px 16px;
   border-top-left-radius: 1rem;
 }
 .leftside__header .img {
@@ -11986,7 +11986,7 @@ h2, .h2 {
   display: none;
 }
 .contact__item {
-  padding: 22px 42px 16px 21px;
+  padding: 22px 40px 16px 21px;
   gap: 24px;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.08);
 }
@@ -12009,6 +12009,12 @@ h2, .h2 {
 .contact__info a {
   text-decoration: none;
   font-weight: bold;
+}
+.contact__name {
+  color: #212529;
+}
+.contact__time {
+  color: #ADB5BD;
 }
 
 .avatar {
