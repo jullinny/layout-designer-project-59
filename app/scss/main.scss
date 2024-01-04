@@ -18,7 +18,7 @@ h2 {
   padding: 24px;
 }
 
-// navigation start 
+// navigation start
 
 .nav {
   flex-wrap: nowrap;
@@ -45,33 +45,27 @@ h2 {
   border-right: 1px solid $gray;
   padding: 0;
   gap: 28px;
-  
   &-header {
     padding: 16px 0 16px 16px;
     border-top-left-radius: $border-radius;
-    
     .img {
       width: 25px;
       height: 40px;
     }
-
     a {
       color: $light;
       text-decoration: none;
       display: flex;
       align-items: center;
     }
-
     p {
       margin: 0 32px 0 8px;
     } 
   }
- 
   &-menu {
     margin-bottom: 0;
     border: none;
   }
-
   &-body {
     h2 {
       color: #212529;
@@ -81,7 +75,6 @@ h2 {
       border: none;
       border-bottom: 1px solid $border-color;
       width: 100%;
-
       &::placeholder {
         color: $secondary;
       }
@@ -92,45 +85,39 @@ h2 {
 .contact {
   @include hide-scrollbar;
   height: calc(100vh - 303px);
-  &-item{
+  &-item {
     padding: 22px 16px 21px;
     gap: 24px;
-    
-    $enable-shadows: true;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.08);
 
+    $enable-shadows: true;
+    box-shadow: 0px 2px 2px 0px rgba(0 0 0 / 8%);
     &:hover {
       background-color: $primary;
+      color: $light; 
+    }
+    a {
       color: $light;
-
-      a {
-        color: $light;
-      }
     }
   }
 
   &-info {
     width: 286px;
-    
     p {
       margin: 0;
       overflow-x: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
     }
-
     a {
       text-decoration: none;
       font-weight: bold;
     }
   }
-
   &-name {
     color: #212529;
   }
-
   &-time {
-    color: #ADB5BD;
+    color: #adb5bd;
   }
 }
 
@@ -173,18 +160,15 @@ h2 {
     padding-top: 47px;
     padding-bottom: 64px;
   }
-
   &-form {
     padding: 20px 0 20px 24px;
     margin: 0 48px;
     border-top: 1px solid $border-color;
   }
-
   &-input {
     border: none;
     width: 100%;
   }
-
   &-button {
     border: none;
     width: 50px;
@@ -192,7 +176,6 @@ h2 {
     background-color: $primary;
     border-radius: 50%;
   }
-
   &-button-img {
     width: 24px;
     height: 24px;
@@ -210,11 +193,9 @@ h2 {
 .message {
   gap: 16px;
   max-width: 624px;
-  
   &-time-left {
     opacity: 0.6;
   }
-
   &-time-right {
     color: #fff;
     opacity: 0.6;
@@ -285,18 +266,18 @@ h2 {
     flex-direction: column-reverse;
     gap: 0;
 
-    &__header {
+    &-header {
       border-radius: 0;
       height: 72px;
       margin-bottom: 0;
       padding: 24px 0 23px 21px;
     }
 
-    &__hide {
+    &-hide {
       display: none;
     }
 
-    &__img {
+    &-img {
       margin-right: 40px;
     }
   }
@@ -320,15 +301,15 @@ h2 {
   }
 
   .contact {
-	  width: 366px;
+    width: 366px;
     height: calc(100vh - 249px);
 
-		&__info {
-		  width: 236px;
-	  }
+    &-info {
+      width: 236px;
+    }
   }
 
-  .chats__contacts {
+  .chats-contacts {
     height: calc(100vh - 295px);
   }
 
@@ -344,17 +325,17 @@ h2 {
   }
 
   .rightside-chat {
-    &__chat {
+    &-chat {
       padding: 48px;
       height: calc(100vh - 94px - 72px - 72px);
     }
 
-    &__form {
+    &-form {
       padding: 15px 15px 15px 32px;
       margin: 0;
     }
 
-    &__button {
+    &-button {
       width: 42px;
       height: 42px;
     }
@@ -371,4 +352,5 @@ h2 {
       display: none;
     }
   }
+  
 }

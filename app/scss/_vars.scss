@@ -10,7 +10,6 @@ $light: #fbfbfb;
 $gray: #efefef;
 $dark: #343a40;
 $title: #212529;
-
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -29,4 +28,5 @@ $container-max-widths: (
 $border-radius: 1rem;
 $border-color: $gray;
 $enable-shadows: true;
-$font-family-sans-serif: system-ui, -apple-system, "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans", "Liberation Sans", arial, sans-serif !default;
+$font-family-sans-serif: "Segoe UI", "Roboto", "Helvetica Neue", "Noto Sans",
+  "Liberation Sans", arial, sans-serif !default;
