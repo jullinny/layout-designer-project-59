@@ -11974,7 +11974,7 @@ h2, .h2 {
 }
 
 .contact {
-  height: calc(100vh - 351px);
+  height: calc(100vh - 303px);
 }
 .contact {
   -ms-overflow-style: none;
@@ -12224,9 +12224,5 @@ h2, .h2 {
   }
   .message img {
     display: none;
-  }
-  .message__time {
-    font-size: 14px;
-    line-height: 19.2px;
   }
 }
